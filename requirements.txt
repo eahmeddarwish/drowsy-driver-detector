@@ -1,0 +1,15 @@
+# Core detection stack
+opencv-python>=4.8
+dlib>=19.24
+imutils>=0.5.4
+scipy>=1.10
+numpy>=1.24
+
+# Raspberry Pi camera support (only installable/needed on the Pi itself;
+# on a dev laptop, leave this out and use CAMERA_SOURCE=webcam instead)
+# picamera>=1.13; platform_machine == "armv7l" or platform_machine == "aarch64"
+
+# Raspberry Pi GPIO control (only installable/needed on the Pi itself)
+# RPi.GPIO>=0.7.1; platform_machine == "armv7l" or platform_machine == "aarch64"
+
+python-dotenv>=1.0

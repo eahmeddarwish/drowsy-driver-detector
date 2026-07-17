@@ -1,0 +1,14 @@
+[Unit]
+Description=Drowsy Driver Detector
+After=multi-user.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/pi/drowsy-driver-detector
+ExecStart=/usr/bin/python3 -m app.main --no-display
+Restart=on-failure
+RestartSec=3
+User=pi
+
+[Install]
+WantedBy=multi-user.target

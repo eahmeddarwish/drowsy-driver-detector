@@ -1,0 +1,17 @@
+# Secrets / machine-specific
+.env
+wpa_supplicant.conf
+
+# Downloaded ML models (fetched by scripts/download_models.sh)
+models/*.dat
+models/*.bz2
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
